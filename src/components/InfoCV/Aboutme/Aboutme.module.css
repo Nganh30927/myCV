@@ -1,0 +1,10 @@
+
+.about_wrapper h2{
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.title{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}

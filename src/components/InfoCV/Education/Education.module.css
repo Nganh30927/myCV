@@ -1,0 +1,28 @@
+
+.edu_wrapper{
+    margin: 10px 0;
+}
+.edu_wrapper h2{
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+/* 
+.edu_list{
+    line-height: 25px;
+}
+
+.edu_list p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.edu_list h3{
+    font-weight: 500;
+    font-size: 15px;
+} */
+/* .edu_list strong{
+    font-weight: 500;
+    font-size: 14px;
+} */

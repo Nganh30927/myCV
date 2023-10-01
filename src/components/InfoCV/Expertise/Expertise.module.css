@@ -1,0 +1,27 @@
+ .filled {
+    color: rgb(255, 222, 7);
+  }
+  
+.empty {
+    color: gray;
+  }
+.icons{
+    display: flex;
+    margin-top: 6px;
+    margin-left: 10px;
+    font-size: 10px;
+    column-gap: 5px;
+}  
+
+.exper_wrapper h2{
+  font-size: 17px;
+  font-weight: 500;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+.name{
+  font-size: 14px;
+}
+.skill_bar li strong{
+  min-width: 100px;
+}

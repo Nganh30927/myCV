@@ -1,0 +1,24 @@
+.work_wrapper h2{
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.work_wrapper{
+    margin-bottom: 10px;
+}
+.workexp_list{
+    line-height: 25px;
+}
+.workexp_list p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.workexp_list h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+.workexp_list strong{
+    font-size: 14px;
+    font-weight: 500;
+}
