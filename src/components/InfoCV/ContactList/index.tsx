@@ -1,4 +1,3 @@
-// import styles from "./ContactList.module.css";
 
 import { profiles } from "../../../data/Profiles";
 
