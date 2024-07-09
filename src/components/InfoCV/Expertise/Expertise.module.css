@@ -14,7 +14,7 @@
 }  
 
 .exper_wrapper h2{
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
   margin: 10px 0;
   text-transform: uppercase;
@@ -24,4 +24,37 @@
 }
 .skill_bar li strong{
   min-width: 100px;
+}
+.set_Image{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.set_Image li{
+  width: calc((100% - 20%) / 4);
+
+}
+
+.set_Image li img {
+
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  /* mix-blend-mode: color-burn; */
+}
+
+.set_library{
+  display: flex;
+
+  align-items: center;
+}
+.set_library .li{
+  width: calc((100% - 10%) / 6);
+
+}
+.set_library .li img {
+  width: 15%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
 }

@@ -1,7 +1,8 @@
 .work_wrapper h2{
-    font-size: 17px;
-    text-transform: uppercase;
-    font-weight: 600;
+    font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0;
+  text-transform: uppercase;
 }
 .work_wrapper{
     margin-bottom: 10px;

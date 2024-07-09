@@ -1,0 +1,17 @@
+
+.set_library{
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+.set_library li{
+  width: calc((100% - 10%) / 6);
+
+}
+.set_library li img {
+  width: 6rem;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  /* mix-blend-mode: color-burn; */
+}

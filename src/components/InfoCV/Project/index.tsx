@@ -1,7 +1,8 @@
 
 import styles from './Project.module.css'
 import { profiles } from '../../../data/Profiles'
-import { FaFileCode, FaGithub } from 'react-icons/fa'
+import {FaGithub } from 'react-icons/fa'
+import MiniProject from './MiniProject';
 type SingleProjectProp = {
   day: string;
   name: string;
@@ -32,13 +33,17 @@ const SingleProject = ({ props }: { props: SingleProjectProp }) => {
 const Project = () => {
   return (
     <div className={styles.pject_wrapper}>
-      <h2 className='flex'><span className='mt-1 mr-2'><FaFileCode /></span>Dự án tại trường</h2>
+      <h2 className='flex'>Dự án đã thực hiện</h2>
 
-      <ol className="relative border-l border-gray-300">
+      <ol className="relative border-l border-gray-300 mb-3">
         {
           profiles[0].project.map((prop) => <SingleProject key={`Workexperience_${prop.id}`} props={prop} />)
         }
       </ol>
+
+      <>
+      <MiniProject/>
+      </>
     </div>
   )
 }

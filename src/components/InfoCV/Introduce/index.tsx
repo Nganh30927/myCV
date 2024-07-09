@@ -22,10 +22,10 @@ const SingleIntro = ({intros}: {intros : SingleIntroProps}) =>{
         <div className="text-center">
         <img
             src={intros.imgUser}
-            className="mx-auto mb-4 w-32 rounded-lg"
+            className="mx-auto mb-4 w-40 rounded-lg bg-gray-400"
             alt="Avatar" />
-        <h2 className="mb-2 text-xl font-medium leading-tight">{intros.uname}</h2>
-        <p className="text-neutral-500 dark:text-neutral-400">{intros.profession}</p>
+        <h2 className="mb-2 text-2xl font-bold leading-tight">{intros.uname}</h2>
+        <p className="text-neutral-600 dark:text-neutral-400">{intros.profession}</p>
         </div>
     )
 }

@@ -1,40 +1,40 @@
 
-import { FaCircle, FaPuzzlePiece } from 'react-icons/fa';
 import styles from './Expertise.module.css';
 import { profiles } from '../../../data/Profiles'
+import Lybraries from './Lybrary';
 
 
 
 type SingleExpertiseProp ={
-    exname: string;
-    level: number
+      img: string;
 }
 
+
+
 const SingleExpertise = ({props}: { props: SingleExpertiseProp }) => {
-  const circles = [...Array(5)].map((_, index) => (
-    <FaCircle
-      key={index}
-      className={index < (props.level || 0) ? styles.filled : styles.empty}
-    />
-  ));
 
   return (
-    <li className='flex  m-1'>
-      <strong className={styles.name}>{props.exname}</strong>
-      <span className={styles.icons}>{circles}</span>
+    <li className='w-24 '>
+      <img className="" src={props.img}/>
     </li>
   );
 };
 
+
+
 function Expertise() {
   return (
     <div className={styles.exper_wrapper}>
-      <h2 className='flex'><span className='mt-1 mr-2'><FaPuzzlePiece/></span>Các kỹ năng</h2>
-      <ul className={styles.skill_bar}>
+     <h2 className=''>Kỹ năng nghề nghiệp</h2>
+     
+     <h4>Công nghệ:</h4>
+      <ul className={styles.set_Image}>
           {
-            profiles[0].experience.map((prop) => <SingleExpertise key={`Expertise_${prop.id}`} props={prop}/>)
+            profiles[0].technologys.map((prop) => <SingleExpertise key={`Expertise_${prop.id}`} props={prop}/>)
           }
       </ul>
+
+      <Lybraries/>
     </div>
   );
 }

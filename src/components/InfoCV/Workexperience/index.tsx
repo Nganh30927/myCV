@@ -1,7 +1,7 @@
 
 import styles from './Workexperience.module.css'
 import { profiles } from '../../../data/Profiles'
-import {FaBriefcase} from 'react-icons/fa'
+
 type SingleWorkExperProp ={
     day: string;
     name: string;
@@ -28,9 +28,9 @@ const SingleWorkExper =({props}:{props: SingleWorkExperProp})=>{
 const Workexperience = () => {
   return (
     <div className={styles.work_wrapper}>
-        <h2 className='flex'><span className='mt-1 mr-2'><FaBriefcase/></span>Kinh nghiệm làm việc</h2>
+        <h2 className='flex'>Kinh nghiệm làm việc</h2>
 
-       <ol className="relative border-l border-gray-300">
+       <ol className="relative border-l border-gray-300 mt-5">
        {
                 profiles[0].workexperience.map((prop) => <SingleWorkExper key={`Workexperience_${prop.id}`} props={prop}/>)
         } 
